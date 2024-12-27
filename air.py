@@ -7,7 +7,7 @@ from collections import Counter
 st.set_page_config(layout='wide')
 st.title('🛫Airline Passenger Satisfaction')
 
-Knn = pickle.load(open('Knn.pkl', 'rb'))
+Knn = pickle.load(open('knn.pkl', 'rb'))
 Svm = pickle.load(open('svm.pkl', 'rb'))
 Naive = pickle.load(open('Naive.pkl', 'rb'))
 Decision = pickle.load(open('decision_tree.pkl', 'rb'))

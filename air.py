@@ -60,7 +60,7 @@ for col in input_names:
     value = user_features[col]
 
     if col in cat_features:
-        le = pickle.load(open(f'PKl Files/encoder_{col}.pkl', 'rb'))
+        le = pickle.load(open(f'encoder_{col}.pkl', 'rb'))
         transformed_value = le.transform(np.array([[value]]))
         features_list.append(transformed_value.item())
     else:

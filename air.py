@@ -40,7 +40,7 @@ def user_input():
         features['Food and drink'] = st.number_input('🍔Food and drink', min_value=0, max_value=5, value=2)
         features['Departure Delay in Minutes'] = st.number_input('⌚Departure Delay in Minutes', min_value=0, max_value=5, value=2)
         features['Inflight service'] = st.number_input('🤗Inflight service', min_value=0, max_value=5, value=2)
-        features['Gender'] = st.selectbox('🧑Gender', options=['Male', 'Female'])
+        features['gender'] = st.selectbox('🧑Gender', options=['Male', 'Female'])
     with col2:
         features['Online boarding'] = st.number_input('📶Online boarding', min_value=0, max_value=5, value=2)
         features['Seat comfort'] = st.number_input('💺Seat comfort', min_value=0, max_value=5, value=2)

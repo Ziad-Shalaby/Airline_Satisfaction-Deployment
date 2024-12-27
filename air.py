@@ -16,7 +16,7 @@ scaler = pickle.load(open('scaler.pkl', 'rb'))
 pt = pickle.load(open('pt.pkl', 'rb'))
 
 input_names = [
-    'Gender', 'Age', 'Flight Distance', 'Inflight wifi service',
+    'gender', 'Age', 'Flight Distance', 'Inflight wifi service',
     'Departure/Arrival time convenient', 'Gate location', 'Food and drink',
     'Online boarding', 'Seat comfort', 'Inflight entertainment',
     'On-board service', 'Leg room service', 'Baggage handling',
@@ -24,7 +24,7 @@ input_names = [
     'Departure Delay in Minutes'
 ]
 
-cat_features = ['Gender']
+cat_features = ['gender']
 
 def user_input():
     features = {}
